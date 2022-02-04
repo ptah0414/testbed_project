@@ -3,13 +3,13 @@ import "firebase/compat/auth";
 import "firebase/compat/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAO7x2wlrFEtg3N3yMHrw64PRlR41h7ee4",
-  authDomain: "test-30ed2.firebaseapp.com",
-  databaseURL: "https://test-30ed2-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "test-30ed2",
-  storageBucket: "test-30ed2.appspot.com",
-  messagingSenderId: "67712427200",
-  appId: "1:67712427200:web:6f654ad25960c4b9f0f925"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_MESSAGING_SENDER_ID
 };
 
 // Initialize Firebase
